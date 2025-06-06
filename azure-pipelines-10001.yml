@@ -1,0 +1,16 @@
+
+trigger:
+- master
+
+pool:
+  name: Default
+
+steps:
+- script: echo My Gradle Application
+  displayName: 'Run with one-line script'
+
+- script: gradle build
+  displayName: 'Building with gradle application'
+  
+- script: gradle run
+  displayName: 'Running with gradle application'  
