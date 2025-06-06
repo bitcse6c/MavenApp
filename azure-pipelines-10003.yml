@@ -1,0 +1,19 @@
+
+
+trigger:
+- master
+
+pool:
+  name: Default
+
+steps:
+- script: My Gradle project!
+  displayName: 'Run a one-line script'
+
+- script: gradle build
+  displayName: 'Building with gradle application'
+
+- script: gradle run
+  displayName: 'Running with gradle application'
+
+
