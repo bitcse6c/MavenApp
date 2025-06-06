@@ -1,0 +1,17 @@
+
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo My Gradle Application
+  displayName: 'Run a one-line script'
+
+- script: gradle build
+  displayName: 'Build with Gradle Application'
+  
+- script: gradle run
+  displayName: 'Running Gradle Application' 
